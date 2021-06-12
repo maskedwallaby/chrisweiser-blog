@@ -1,0 +1,21 @@
+{
+  "title": "Chris Weiser dot com",
+  "url": "https://www.chrisweiser.com/",
+  "language": "en",
+  "description": "Blog, resume, and portfolio page of Chris Weiser, web designer.",
+  "feed": {
+    "subtitle": "The relatively filtered thoughts of Chris Weiser on web design, art, and technology.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://www.chrisweiser.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://www.chrisweiser.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Chris Weiser",
+    "email": "me@chrisweiser.com",
+    "url": "https://www.chrisweiser.com/about/"
+  }
+}
