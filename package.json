@@ -7,9 +7,6 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*",
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -34,6 +31,7 @@
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.1.0",
+    "normalize-scss": "^7.0.1",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {

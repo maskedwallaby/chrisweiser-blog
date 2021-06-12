@@ -12,6 +12,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
+  eleventyConfig.setUseGitIgnore(false);
+
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
 
@@ -57,8 +59,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("assets/img");
+  eleventyConfig.addPassthroughCopy("assets/fonts");
+  // eleventyConfig.addPassthroughCopy("css");
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
