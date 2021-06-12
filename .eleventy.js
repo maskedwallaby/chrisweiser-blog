@@ -63,6 +63,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/fonts");
   // eleventyConfig.addPassthroughCopy("css");
 
+  eleventyConfig.addWatchTarget("./assets/styles/");
+
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
