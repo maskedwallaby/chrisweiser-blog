@@ -12,7 +12,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.setUseGitIgnore(false);
+  // eleventyConfig.setUseGitIgnore(false);
+  // eleventyConfig.setPugOptions({ debug: true });
 
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);

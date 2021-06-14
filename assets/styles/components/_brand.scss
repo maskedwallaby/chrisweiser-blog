@@ -5,15 +5,25 @@
 	color: var(--color-primary);
 	text-decoration: none;
 
-	display: grid;
-	grid-template-rows: 2;
+	display: inline-grid;
+	align-items: end;
+	// @media only screen and (min-width: map-get($breakpoints, "tablet-portrait")) {
+	// 	grid-template-columns: 1fr 1fr;
+	// 	grid-column-gap: 0.5rem;
+	// }
 
 	&__major {
 		font-size: 2rem;
 		font-weight: 800;
 		text-transform: uppercase;
+		line-height: 1;
 	}
 	&__minor {
 		font-weight: 600;
+		font-size: 1.625rem;
+		line-height: 1.125;
+		// @media only screen and (max-width: map-get($breakpoints, "tablet-portrait") - 1) {
+			letter-spacing: -1px;
+		// }
 	}
 }

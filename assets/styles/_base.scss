@@ -1,3 +1,13 @@
 h1 {
 	font-size: 2rem;
 }
+
+h1, h2, h3, h4 {
+	font-family: var(--type-heading);
+}
+
+h1 {
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}

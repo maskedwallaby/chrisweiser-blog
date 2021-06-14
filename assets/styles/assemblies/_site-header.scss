@@ -1,7 +1,22 @@
 .site-header {
-	display: grid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-	@media only screen and (min-width: map-get($breakpoints, "tablet-landscape")) {
-		grid-template-columns: 200px 1fr;
+	margin-bottom: var(--spacer-lg);
+	padding-top: var(--spacer);
+	padding-bottom: var(--spacer);
+
+	border-bottom: solid 1px var(--color-border);
+
+	.brand {
+		@include mq(tablet-portrait, min) {
+			flex: 1;
+		}
+		
+	}
+
+	.nav {
+		flex: 1
 	}
 }
