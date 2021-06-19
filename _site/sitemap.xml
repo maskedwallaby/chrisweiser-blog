@@ -42,17 +42,17 @@
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/tags/another-tag/</loc>
-    <lastmod>2021-06-12</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.chrisweiser.com/_site/tags/second-tag/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
     <loc>https://www.chrisweiser.com/_site/tags/number-2/</loc>
+    <lastmod>2021-06-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.chrisweiser.com/_site/tags/another-tag/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
