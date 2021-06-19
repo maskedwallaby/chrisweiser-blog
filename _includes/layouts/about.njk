@@ -2,11 +2,7 @@
 layout: layouts/base.njk
 templateClass: tmpl-about
 ---
-<h1>{{ title }}</h1>
-
-<div class="post-with-image">
-  <figure class="featured-image">
-  {% image "./assets/img/me.jpg", "Smiling white male in a red shirt." %}
-  </figure>
-  {{ content | safe }}
-</div>
+{{ content | safe }}
+<figure class="featured-image">
+  <img src="../assets/img/me.JPG" alt="Photo of me">
+</figure>
