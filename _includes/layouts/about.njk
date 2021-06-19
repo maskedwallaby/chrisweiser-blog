@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-about
+---
+<h1>{{ title }}</h1>
+
+<div class="post-with-image">
+  <figure class="featured-image">
+  {% image "./assets/img/me.jpg", "Smiling white male in a red shirt." %}
+  </figure>
+  {{ content | safe }}
+</div>
