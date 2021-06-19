@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/posts/firstpost/</loc>
+    <loc>https://www.chrisweiser.com/posts/firstpost/</loc>
     <lastmod>2018-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/posts/secondpost/</loc>
+    <loc>https://www.chrisweiser.com/posts/secondpost/</loc>
     <lastmod>2018-07-04</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/posts/thirdpost/</loc>
+    <loc>https://www.chrisweiser.com/posts/thirdpost/</loc>
     <lastmod>2018-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/posts/fourthpost/</loc>
+    <loc>https://www.chrisweiser.com/posts/fourthpost/</loc>
     <lastmod>2018-09-30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/posts/</loc>
+    <loc>https://www.chrisweiser.com/posts/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/</loc>
+    <loc>https://www.chrisweiser.com/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/page-list/</loc>
+    <loc>https://www.chrisweiser.com/page-list/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/tags/</loc>
+    <loc>https://www.chrisweiser.com/tags/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/tags/second-tag/</loc>
+    <loc>https://www.chrisweiser.com/tags/second-tag/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/tags/number-2/</loc>
+    <loc>https://www.chrisweiser.com/tags/number-2/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/tags/another-tag/</loc>
+    <loc>https://www.chrisweiser.com/tags/another-tag/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/_site/about/</loc>
+    <loc>https://www.chrisweiser.com/about/</loc>
     <lastmod>2021-06-14</lastmod>
   </url>
 </urlset>
