@@ -1,12 +1,16 @@
-@import '../../node_modules/normalize-scss/sass/_normalize.scss';
+@import '../../node_modules/normalize-scss/sass/normalize/_import-now.scss';
 
 @import 'defs';
+@import 'sass';
 @import 'base';
 @import 'typography';
+@import 'util';
 
-@import 'components/brand';
-@import 'components/nav';
-@import 'components/featured-image';
+@import 'component/brand';
+@import 'component/nav';
+@import 'component/featured-image';
 
-@import 'assemblies/site-header';
-@import 'assemblies/page-layout';
+@import 'assembly/site-header';
+@import 'assembly/page-layout';
+
+@import 'theme/darkmode';

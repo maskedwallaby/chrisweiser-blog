@@ -1,0 +1,14 @@
+.placeholder-image {
+	min-width: 200px;
+	min-height: 200px;
+	background-color: lightgray;
+	position: relative;
+	margin-bottom: var(--spacer-sm);
+	&::before {
+		content: "Placeholder";
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include spread;
+	}
+}

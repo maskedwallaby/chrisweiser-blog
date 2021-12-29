@@ -1,0 +1,25 @@
+body {
+	--type-clay: serif;
+	background-color: tan;
+	background-image: url('img/AdobeStock_311940620_Preview.jpeg');
+	background-size: 100% auto;
+	color: black;
+	font-family: var(--type-clay, var(--type-text));
+	font-size: em(27px);
+	text-shadow: 0 -1px 1px hsla(0, 30%, 30%, 0.5),
+				 0 1px hsla(0, 10%, 90%, 0.9);
+}
+
+.site-container {
+	background-color: hsla(30,30%,70%,0.8);
+	// box-shadow: 2px 2px 2px 4px hsla(0, 30%, 30%, 1),
+				// -2px -2px 2px 4px hsla(0, 10%, 90%, 1);
+	padding: 0 var(--spacer) var(--spacer);
+	margin-top: var(--spacer);
+	border-radius: var(--radius);
+}
+
+// Nav font: formed clay using background image with text-indent -9999;
+// Light clay mode and dark clay / mode! Or just use background images for the button portion and "emboss" the text.
+// Owl's gotta be like a diorama.
+// Could be like each page is a different "room" of a clay house. Or it's a clay sky.

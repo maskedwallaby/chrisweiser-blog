@@ -22,7 +22,7 @@
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/posts/</loc>
+    <loc>https://www.chrisweiser.com/blog/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
@@ -42,7 +42,7 @@
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/tags/second-tag/</loc>
+    <loc>https://www.chrisweiser.com/tags/number-2/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
@@ -52,12 +52,22 @@
   </url>
   
   <url>
-    <loc>https://www.chrisweiser.com/tags/number-2/</loc>
+    <loc>https://www.chrisweiser.com/tags/second-tag/</loc>
     <lastmod>2021-06-12</lastmod>
   </url>
   
   <url>
     <loc>https://www.chrisweiser.com/about/</loc>
-    <lastmod>2021-06-19</lastmod>
+    <lastmod>2021-10-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.chrisweiser.com/work/</loc>
+    <lastmod>2021-10-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.chrisweiser.com/contact/</loc>
+    <lastmod>2021-11-25</lastmod>
   </url>
 </urlset>

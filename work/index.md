@@ -1,10 +1,10 @@
 ---
-layout: layouts/about.njk
-title: About Me
-templateClass: tmpl-about
+layout: layouts/work.njk
+title: My Work
+templateClass: tmpl-work
 eleventyNavigation:
-  key: About Me
-  order: 1
+  key: Work
+  order: 2
 ---
 
 I'm a front-end visual developer who specializing in UI/UX. I design web and app interfaces and specialize in accessibility. I also code and implement custom WordPress website templates for clients.

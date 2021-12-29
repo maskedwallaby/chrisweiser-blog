@@ -12,13 +12,15 @@
   <body>
     <div class="site-container">
       <header class="site-header">
-        <a href="{{ '/' | url }}" class="brand">
-          <span class="brand__major">{{ metadata.title }}</span>
-          <span class="brand__minor">{{ metadata.subtitle }}</span>
-        </a>
-
         {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
         <ul class="nav">
+          <li class="brand">
+            <a href="{{ '/' | url }}">
+              <img src="{{ '/assets/img/owl-outlined.svg' | url }}" alt="Owl logo.">
+              <span class="brand__major">{{ metadata.title }}</span>
+              <span class="brand__minor">{{ metadata.subtitle }}</span>
+            </a>
+          </li>
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}"><a href="{{ entry.url | url }}" class="nav__link">{{ entry.title }}</a></li>
         {%- endfor %}

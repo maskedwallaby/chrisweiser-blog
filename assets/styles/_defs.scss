@@ -1,15 +1,19 @@
 /* -------------------------------------------------- \
- *																										*
- *								CSS CUSTOM PROPERTIES 							*
- *																										*
+ *													  *													*
+ *				CSS CUSTOM PROPERTIES				  *
+ *													  *													*
 \* -------------------------------------------------- */
 
 :root {
 	/* --------------------- Colors --------------------- */
-	--color-primary: hsla(0,0,0,1);
+	--color-primary: hsla(0,0%,0%,1);
 	--color-border: hsla(0,0%,86%,1);
 	--color-light: hsla(0,0%,92%,1);
 	--color-active: hsla(240,100%,70%,1);
+
+	--color-brand--navy: hsla(209,58%,24%,1);
+	--color-brand--cardinal: hsla(349,51%,49%,1);
+	--color-brand--canary: hsla(45,76%,79%,1);
 
 	
 	/* --------------------- Typography --------------------- */
@@ -26,121 +30,4 @@
 	--spacer-sm: calc(var(--spacer) / var(--spacer-multiplier));
 
 	--radius: 10px;
-}
-
-
-
-
-/* -------------------------------------------------- \
- *																										*
- *												SASS 												*
- *																										*
-\* -------------------------------------------------- */
-
-/* --------------------- Layout --------------------- */
-
-$body-font-size: 18px;
-
-$breakpoints: (
-  "phone-landscape": 667px,
-  "tablet-portrait": 768px,
-  "tablet-landscape": 1024px,
-);
-
-//---------------------------------
-// Units
-//---------------------------------
-
-// --
-// Converts pixels to ems
-// @param  {Number} $px-values  The pixel value to convert
-// @param  {Number} $font-size  The context for which to set the em value
-// @return {Number}             The new em value
-// --
-@function em($px-values, $font-size: $body-font-size) {
-  // Create an empty list that we can dump values into
-  $em-values: ();
-  @each $value in $px-values {
-    // Check to see if value is 0, auto, or inherited
-    // If so, do nothing and output value
-    @if $value == 0 or $value == auto or $value == inherit {
-      $em-values: append($em-values, $value);
-    // If the value is a pixel, convert to em value
-    } @else if unit($value) == 'px' {
-      $em-values: append($em-values, #{($value/$font-size)}em);
-    // For everything else, keep as is
-    } @else {
-      $em-values: append($em-values, $value);
-    }
-  }
-  @return $em-values;
-}
-
-// --
-// Converts pixels to rems
-// @param  {Number} $px-values  The pixel value to convert
-// @param  {Number} $font-size  The context for which to set the rem value
-// @return {Number}             The new rem value
-// --
-@function rem($px-values, $font-size: $base-font-size) {
-  // Create an empty list that we can dump values into
-  $rem-values: ();
-  @each $value in $px-values {
-    // Check to see if value is 0, auto, or inherited
-    // If so, do nothing and output value
-    @if $value == 0 or $value == auto or $value == inherit {
-      $rem-values: append($rem-values, $value);
-    // If the value is a pixel, convert to em value
-    } @else if unit($value) == 'px' {
-      $rem-values: append($rem-values, #{($value/$font-size)}rem);
-    // For everything else, keep as is
-    } @else {
-      $rem-values: append($rem-values, $value);
-    }
-  }
-  @return $rem-values;
-}
-
-/*------------------------------------*\
-  Media Queries
-\*------------------------------------*/
-
-$print-media: false !default;
-
-// Usage: mq(medium, min)
-@mixin mq($point, $type: "min") {
-  @if $print-media {
-    @if $point == "print" {
-      @media print {
-        @content;
-      }
-    } @else {
-      @content;
-    }
-  } @else {
-    $breakpoint: null;
-    @if type-of($point) == "number" {
-      @if unitless($point) or unit($point) == "em" or unit($point) == "rem" or unit($point) == "%" {
-        @warn "Please use pixel values.";
-      } @else {
-        $breakpoint: $point;
-      }
-    } @else if map-has-key($breakpoints, $point) {
-      $breakpoint: map-get($breakpoints, $point);
-    } @else {
-      @warn "Couldn't find a breakpoint named `#{$point}`.";
-    }
-
-    @if $breakpoint != null {
-      @if $type == "max" {
-        @media screen and (max-width: em($breakpoint - 1px)) {
-          @content;
-        }
-      } @else {
-        @media screen and (min-width: em($breakpoint)) {
-          @content;
-        }
-      }
-    }
-  }
 }
